@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESKTOP INDEX */
+.body__index{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: 5.3rem 43.44rem 41.3rem 41.3rem 18rem;*/
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas: "hero1 hero2"
+                         "footer footer";
+}
+
+/* HERO SECTION izquierda*/
+.hero1{
+    grid-area: hero1;
+    background-color: #e22a34;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+}
+
+.hero1__contenedorLogo{
+    margin: 40px 0px 0px 40px;
+}
+
+.hero1__logo{
+    width: 115px;
+    height: 115px;
+    border-radius: 100px;
+}
+
+.hero1__lista{
+    list-style: none;
+    margin-top: 40px;
+    color: #fff;
+    font-family: 'Mandali', sans-serif;
+    padding-left: 2.5rem;
+}
+
+.hero1__item{
+    padding-bottom: 5px;
+}
+
+.hero1__item a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.hero1__item a:hover{
+    font-size: 35px;
+}
+
+.hero1__redes{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    margin-right: 25px;
+    list-style: none;
+    align-items: flex-end;
+}
+
+.hero1__redes img{
+    width: 4.5rem;
+    height: 4rem;
+    padding-right: 10px;
+}
+
+/* HERO SECTION derecha*/
+
+.hero2{
+    grid-area: hero2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #eb9907;
+}
+
+.hero2__imgContenedor img{
+    width: 95%;
+    height: 100%;
+}
+
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-family: 'Mandali', sans-serif;
+    border-top: 7px solid;
+}
+
+
+.footerContenedor1{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerContenedor2{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+      
+}
+
+.footerContenedor3{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.footerContenedor2__logo{
+    margin-top: 1rem;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 17rem;
+    border: 1px solid #e22a34;
+}
+
+
+.separador{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid;
+}
+
+
+/* SOBRE NOSOTROS INDEX */
+.body__sobreNosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "header header"
+                         "historia historia"
+                         "titulo titulo"
+                         "fundadores fundadores"
+                         "footer footer";
+
+
+
+
+    font-family: 'Mandali', sans-serif;font-family: 'Mandali', sans-serif;
+}
+
+/* FUNDADORES SECTION-SOBRE NOSOTROS */
+.fundadores{
+    grid-area: fundadores;
+    display: flex;
+    background-color: #e22a34;
+    color: #DAF7A6 ;
+}
+
+.fundadoresContenedor1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.fundadoresContenedor1 img{
+    width: 30rem;
+}
+
+.fundadoresContenedor1__texto{
+    margin: 0rem 3rem 3rem 3rem;
+
+}
+
+.fundadoresContenedor2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.fundadoresContenedor2 img{
+    width: 30rem;
+}
+
+.fundadoresContenedor2__texto{
+    margin: 0rem 3rem 3rem 3rem;
+
+}
+
+/* HISTORIA SECTION-SOBRE NOSOTROS*/
+.historia{
+    grid-area: historia;
+    display: flex;
+    background-color: #e22a34;
+    color: #DAF7A6 ;
+}
+
+.historiaContenedor1{
+    width: 45%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-self: center;
+    
+
+}
+
+.historiaContenedor2{
+    width: 55%;
+    background-color: #eb9907;
+}
+
+.historiaContenedor2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* TITULO-SOBRE NOSOTROS */
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+    padding: 5rem 0rem;
+    background-color:#eb9907;
+    color: #DAF7A6 ;
+}
+
+/* HEADER SOBRE NOSOTROS */
+
+.header{
+    grid-area: header;
+}
+
+.header__nav{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__lista{
+    display: flex;
+    align-self: center;
+    list-style: none;
+    font-size: 1.56rem;
+    font-family: 'Mandali', sans-serif;
+    text-transform: uppercase;
+}
+
+.header__item{
+    padding-right: 35px;
+}
+
+.header__item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__item a:hover{
+    border-bottom: solid 0.2rem #fff;
+}
+
+
+.header__logo{
+    width: 115px;
+    height: 115px;
+    border-radius: 100px;
+}
+
+
+
+@media only screen and (max-width: 1024px) { 
+    .body__index{
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+ 
+        grid-template-rows: repeat(2, auto);
+
+        grid-template-areas: "hero1 hero2"
+                             "footer footer";
+    }
+    /* FOOTER */
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerContenedor1{
+        width: 100%;
+    }
+
+    .footerContenedor2{
+        width: 100%;
+    }
+
+    .footerContenedor3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerContenedor3 iframe{
+        width: 18rem;
+    }
+    /* HERO INDEX */
+    .hero1__item a{
+        font-size: 19px;
+    }
+    
+    .hero1__item a:hover{
+        font-size: 25px;
+    }
+
+    .hero1__redes img {
+        width: 3.5rem;
+        height: 3rem;
+    }
+    
+    .hero1__redes {
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .hero1__contenedorLogo {
+        margin: 40px 0px 0px 27px;
+    }
+
+    .hero1__lista {
+        margin-top: 40px;
+        padding-left: 1.5rem;
+    }
+
+    #hero1__item--doble a{
+        font-size: 18px;
+    }
+
+
+    /* HISTORIA-SOBRE NOSOTROS */
+
+    .historia{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .historiaContenedor1{
+        width: 100%;
+        margin: 5rem;
+        text-align: center;
+    }
+    
+    .historiaContenedor1 h1{
+        margin-bottom: 3rem;
+    }
+    
+    .historiaContenedor2{
+        width: 100%;
+    }
+    
+    /* HEADER */
+
+    .header__lista{
+        font-size: 1rem;
+    }
+
+    /* FUNDADORES-SOBRE NOSOTROS */
+    .fundadores{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .fundadoresContenedor1{
+        width: 100%;
+    
+    }
+    
+    .fundadoresContenedor2{
+        width: 100%;
+
+    }
+    
+}
+
+
+@media only screen and (max-width: 654px) { 
+ 
+
+    .body__index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    
+        grid-template-areas: "hero1 hero1"
+                             "hero2 hero2"
+                             "footer footer";
+    }
+    /* HERO INDEX */
+    .hero1{
+        grid-area: hero1;
+        display: flex;
+        align-items: center;;
+    
+    }
+
+    .hero1__lista{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 20px 0px;
+    
+    }
+
+    .hero1__lista a{
+        font-size: 15px;
+        padding: 0px 5px;
+    
+    }
+
+    #hero1__item--doble a{
+        font-size: 15px;
+    }
+
+    .hero1__contenedorLogo {
+        margin: 40px 0px 0px 0px;
+    }
+
+    /* FUNDADORES-SOBRE NOSOTROS */
+    .fundadoresContenedor1 img{
+        width: 20rem;
+    }
+
+
+    .fundadoresContenedor2 img{
+        width: 20rem;
+    }
+
+    /* HEADER */
+    .header__lista{
+        font-size: 0.6rem;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 470px) { 
+    /* HERO INDEX*/
+    .hero1__lista a{
+        font-size: 12px;
+    
+    }
+
+    #hero1__item--doble a{
+        font-size: 12px;
+    }
+
+    /* FOOTER INDEX */
+    .footerContenedor2__logo{
+        width: 14rem;
+        height: 14rem;
+    }
+
+        /* HEADER */
+    .header__lista{
+         display: flex;
+         flex-wrap: wrap;
+    }
+    
+
+}
