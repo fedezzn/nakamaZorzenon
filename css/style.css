@@ -284,6 +284,20 @@
     border-radius: 100px;
 }
 
+/* CONTACTO INDEX */
+.body__contacto{
+    background-color: #e22a34;
+}
+
+/* MENU INDEX */
+.body__menu{
+    background-color: #e22a34;
+}
+
+/* LOCALES INDEX */
+.body__locales{
+    background-color: #e22a34;
+}
 
 
 @media only screen and (max-width: 1024px) { 
