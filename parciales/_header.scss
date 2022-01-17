@@ -1,0 +1,49 @@
+/* HEADER */
+
+.header{
+    grid-area: header;
+    &__nav{
+        background-color: #000;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__lista{
+        display: flex;
+        align-self: center;
+        list-style: none;
+        font-size: 1.56rem;
+        font-family: 'Mandali', sans-serif;
+        text-transform: uppercase;
+    }
+    &__item{
+        padding-right: 35px;
+        & a {
+            text-decoration: none;
+            color: #fff;
+            &:hover{
+                border-bottom: solid 0.2rem #fff;
+                color: #fff;
+            }
+        }
+    }
+    &__logo{
+        width: 115px;
+        height: 115px;
+        border-radius: 100px;
+    }
+    &__checkboxMenu{
+        display: none;
+    }
+    &__labelMenu{
+        display: none;
+    }
+}
+
+#checked{
+    color: #eb9907; 
+    &:hover{
+        border-bottom: solid 0.2rem #eb9907;
+    }
+}

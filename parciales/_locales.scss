@@ -1,0 +1,71 @@
+/* LOCALES */
+.body__locales{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header"
+                         "locales1 locales2"
+                         "locales3 locales3"
+                         "footer footer";
+    background-color: #e22a34;
+}
+
+.locales__contenedor1{
+    grid-area: locales1;
+    margin-left: 1rem;
+    &Img{
+        width: 647px;
+    }
+}
+
+
+.locales__contenedor2{
+    grid-area: locales2;
+    &Iframe{
+        height: 418px;
+        margin: 1rem;
+    }
+    &Titulo{
+        margin: 1rem 1rem 0rem 1rem;
+        font-size: 2rem;
+        color: #DAF7A6 ;
+        text-align: center;
+        padding: 29px;
+        background-color: #eb9907;
+    }
+    &Texto{
+        margin-left: 1rem;
+        color: #DAF7A6 ;
+    }
+}
+
+.locales__contenedor3{
+    grid-area: locales3;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    &Titulo{
+        margin-top: 1rem;
+        padding: 29px;
+        background-color: #eb9907;
+        color: #DAF7A6 ;
+        font-size: 2rem;
+        text-align: center;
+    }
+    &Texto{
+        color: #DAF7A6;
+        font-size: 2rem;
+        text-align: center;
+    }
+    &Btn{
+        text-decoration: none;
+        color: #DAF7A6 ;
+        padding: 20px 60px;
+        background-color: #000;
+        align-self: center;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@media only screen and (max-width: 654px) { 
+ 
+
+    .body__index{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    
+        grid-template-areas: "hero1 hero1"
+                             "hero2 hero2"
+                             "footer footer";
+    }
+    /* HERO INDEX */
+    .hero1{
+        grid-area: hero1;
+        display: flex;
+        align-items: center;
+        &__lista{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+            margin: 20px 0px;
+            & a{
+                font-size: 15px;
+                padding: 0px 5px;
+            }
+        }
+        &__contenedorLogo{
+            margin: 40px 0px 0px 0px;
+        }
+    
+    }
+
+    #hero1__item--doble a{
+        font-size: 15px;
+    }
+
+
+    /* FUNDADORES-SOBRE NOSOTROS */
+    .fundadoresContenedor1 img{
+        width: 100%;
+    }
+
+
+    .fundadoresContenedor2 img{
+        width: 100%;
+    }
+
+    /* HEADER */
+    .header__labelMenu{
+        display: block;
+        cursor: pointer;
+        padding-top: 10px;
+    }
+
+    .header__lista{
+        position: fixed;
+        top: 7.18rem;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        background: #e22a34;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.7s ease-in-out;
+        font-size: 1.87rem;
+
+    }
+
+    .header__checkboxMenu:checked + .header__lista{
+        clip-path: circle(100% at center);
+    }
+
+
+    /* LOCALES */
+    .body__locales{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "header header"
+                             "locales1 locales1"
+                             "locales2 locales2"
+                             "locales3 locales3"
+                             "footer footer";
+        background-color: #e22a34;
+    }
+
+    .locales__contenedor1Img{
+        width: 100%;
+    }
+
+    .locales__contenedor2Iframe{
+        width: 412px;
+    }
+}

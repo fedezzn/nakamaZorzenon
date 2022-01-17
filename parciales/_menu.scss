@@ -1,0 +1,40 @@
+/* MENU */
+.body__menu{
+    background-color: #e22a34;
+    background-image: url(../media/wave.svg);
+    background-position: 0% 82%;
+    background-repeat: no-repeat;
+    font-family: 'Mandali', sans-serif;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__carta{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        & iframe{
+            width: 80%;
+            height: 40rem;
+        }
+    }
+    &__titulo{
+        font-size: 4rem;
+        color: #DAF7A6 ;
+        text-align: center;
+    }
+    &__btn{
+        text-decoration: none;
+        color: #DAF7A6 ;
+        padding: 20px 60px;
+        background-color: #000;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}

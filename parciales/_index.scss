@@ -1,0 +1,74 @@
+/* DESKTOP INDEX */
+.body__index{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: 5.3rem 43.44rem 41.3rem 41.3rem 18rem;*/
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas: "hero1 hero2"
+                         "footer footer";
+}
+
+/* HERO SECTION izquierda*/
+.hero1{
+    grid-area: hero1;
+    background-color: #e22a34;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    &__contenedorLogo{
+        margin: 40px 0px 0px 40px;
+    }
+    &__logo{
+        width: 115px;
+        height: 115px;
+        border-radius: 100px;
+    }
+    &__lista{
+        list-style: none;
+        margin-top: 40px;
+        color: #fff;
+        font-family: 'Mandali', sans-serif;
+        padding-left: 2.5rem;
+    }
+    &__item{
+        padding-bottom: 5px;
+        & a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 30px;
+            &:hover{
+                font-size: 35px;
+            }
+
+        }
+    }
+    &__redes{
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+        margin-right: 25px;
+        list-style: none;
+        align-items: flex-end;
+        & img{
+            width: 4.5rem;
+            height: 4rem;
+            padding-right: 10px;
+        }
+    }
+}
+
+/* HERO SECTION derecha*/
+
+.hero2{
+    grid-area: hero2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #eb9907;
+    &__imgContenedor img{
+        width: 95%;
+        height: 100%;
+    }
+}

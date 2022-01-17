@@ -1,0 +1,85 @@
+/* SOBRE NOSOTROS INDEX */
+.body__sobreNosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+    grid-template-areas: "header header"
+                         "historia historia"
+                         "titulo titulo"
+                         "fundadores fundadores"
+                         "footer footer";
+
+
+
+
+    font-family: 'Mandali', sans-serif;font-family: 'Mandali', sans-serif;
+}
+
+
+
+/* FUNDADORES SECTION-SOBRE NOSOTROS */
+.fundadores{
+    grid-area: fundadores;
+    display: flex;
+    background-color: #e22a34;
+    color: #DAF7A6 ;
+    &Contenedor1{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img{
+            width: 30rem;
+        }
+        &__texto{
+            margin: 0rem 3rem 3rem 3rem;
+        }
+    }
+    &Contenedor2{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img{
+            width: 30rem;
+        }
+        &__texto{
+            margin: 0rem 3rem 3rem 3rem;
+        }
+    }
+}
+
+
+
+/* HISTORIA SECTION-SOBRE NOSOTROS*/
+.historia{
+    grid-area: historia;
+    display: flex;
+    background-color: #e22a34;
+    color: #DAF7A6 ;
+    &Contenedor1{
+        width: 45%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        align-self: center;
+    }
+    &Contenedor2{
+        width: 55%;
+        background-color: #eb9907;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+/* TITULO-SOBRE NOSOTROS */
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+    padding: 5rem 0rem;
+    background-color:#eb9907;
+    color: #DAF7A6 ;
+}
