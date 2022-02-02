@@ -1,3 +1,4 @@
+/* MEDIA 654px */
 @media only screen and (max-width: 654px) { 
  
 
@@ -10,7 +11,7 @@
                              "hero2 hero2"
                              "footer footer";
     }
-    /* HERO INDEX */
+    /* HERO SECTION-INDEX */
     .hero1{
         grid-area: hero1;
         display: flex;
@@ -36,7 +37,7 @@
     }
 
 
-    /* FUNDADORES-SOBRE NOSOTROS */
+    /* FUNDADORES SECTION-QUIENES SOMOS */
     .fundadoresContenedor1 img{
         width: 100%;
     }
@@ -54,12 +55,12 @@
     }
 
     .header__lista{
-        position: fixed;
-        top: 7.18rem;
+        position: absolute;
+        top: 8.18rem;
         bottom: 0;
         width: 100%;
         left: 0;
-        background: #e22a34;
+        background: map-get($colores, negro);
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
@@ -67,6 +68,8 @@
         clip-path: circle(0 at center);
         transition: clip-path 0.7s ease-in-out;
         font-size: 1.87rem;
+        border-top: solid 5px map-get($colores, blanco);
+        border-bottom: solid 5px map-get($colores, blanco);
 
     }
 
@@ -75,21 +78,25 @@
     }
 
 
-    /* LOCALES */
+    /* BODY-LOCALES */
     .body__locales{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, auto);
         grid-template-areas: "header header"
-                             "locales1 locales1"
                              "locales2 locales2"
+                             "locales1 locales1"
                              "locales3 locales3"
                              "footer footer";
-        background-color: #e22a34;
+
     }
 
-    .locales__contenedor1Img{
-        width: 100%;
+
+    .locales__contenedor1{
+        margin-left: 0;
+        &Img{
+            width: 100%;
+        }
     }
 
     .locales__contenedor2Iframe{

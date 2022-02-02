@@ -1,4 +1,6 @@
+/* MEDIA 1024px */
 @media only screen and (max-width: 1024px) { 
+    /* BODY-INDEX */
     .body__index{
         display: grid;
         grid-template-columns: 0.3fr 1fr;
@@ -24,7 +26,7 @@
     }
 
 
-    /* HERO INDEX */
+    /* HERO SECTION-INDEX */
     .hero1__item a{
         font-size: 19px;
         &:hover{
@@ -56,7 +58,7 @@
     }
 
 
-    /* HISTORIA-SOBRE NOSOTROS */
+    /* HISTORIA SECTION-QUIENES SOMOS */
 
     .historia{
         display: flex;
@@ -81,7 +83,7 @@
         font-size: 1rem;
     }
 
-    /* FUNDADORES-SOBRE NOSOTROS */
+    /* FUNDADORES SECTION-QUIENES SOMOS */
     .fundadores{
         display: flex;
         flex-direction: column;
@@ -93,7 +95,7 @@
         }
     }
     
-    /* MENU */
+    /* BODY-MENU */
     .body__menu{
         background-position: 0% 64%;
     }

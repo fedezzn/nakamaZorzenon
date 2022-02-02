@@ -1,21 +1,22 @@
 /* DESKTOP INDEX */
 .body__index{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /*grid-template-rows: 5.3rem 43.44rem 41.3rem 41.3rem 18rem;*/
+    grid-template-columns: 0.7fr 1.2fr;
     grid-template-rows: repeat(2, auto);
 
     grid-template-areas: "hero1 hero2"
                          "footer footer";
+
+
+    background-color: map-get($colores, dorado);
 }
 
 /* HERO SECTION izquierda*/
 .hero1{
     grid-area: hero1;
-    background-color: #e22a34;
+    background-color: map-get($colores , rojo );
     display: flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
     &__contenedorLogo{
         margin: 40px 0px 0px 40px;
     }
@@ -27,14 +28,14 @@
     &__lista{
         list-style: none;
         margin-top: 40px;
-        color: #fff;
+        color: map-get($colores , blanco );
         font-family: 'Mandali', sans-serif;
         padding-left: 2.5rem;
     }
     &__item{
         padding-bottom: 5px;
         & a{
-            color: #fff;
+            color: map-get($colores , blanco );
             text-decoration: none;
             font-size: 30px;
             &:hover{
@@ -63,12 +64,35 @@
 .hero2{
     grid-area: hero2;
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     overflow: hidden;
-    background-color: #eb9907;
-    &__imgContenedor img{
-        width: 95%;
-        height: 100%;
+    background-image: url(../media/nakama_ramen.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    &Contenedor{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        color: map-get($colores , clarito);
+        margin-top: 1rem;
+        &__btn{
+            text-decoration: none;
+            color: map-get($colores , clarito);
+            padding: 20px 60px;
+            background-color: map-get($colores , negro);
+            align-self: center;
+            margin-top: 14rem;
+            &:hover{
+                background-color: map-get($colores, blanco);
+                color: map-get($colores , negro);
+            }
+        }
+        &__h1{
+            margin-top: 9rem;
+            padding: 20px 45px;
+            background-color: map-get($colores , negro);
+        }
     }
 }

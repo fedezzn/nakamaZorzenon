@@ -1,12 +1,13 @@
 /* FOOTER */
 .footer{
     grid-area: footer;
-    background-color: #000;
+    background-color: map-get($colores , negro);
     display: flex;
     justify-content: space-around;
-    color: #fff;
+    color: map-get($colores, blanco);
     font-family: 'Mandali', sans-serif;
     border-top: 7px solid;
+
     &Contenedor1{
         width: 33%;
         display: flex;
@@ -24,9 +25,9 @@
         margin-left: 25px;
         & a{
             text-decoration: none;
-            color: #d6d8d9;
+            color: map-get($colores , gris);
             &:hover{
-                color: #eb9907;
+                color: map-get($colores , dorado);
             }
         }
     } 
@@ -42,9 +43,9 @@
         margin-left: 25px;
         & a{
             text-decoration: none;
-            color: #d6d8d9;
+            color: map-get($colores , gris);
             &:hover{
-                color: #eb9907;
+                color: map-get($colores , dorado);
             }
         }
     }

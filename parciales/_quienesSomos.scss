@@ -1,4 +1,4 @@
-/* SOBRE NOSOTROS INDEX */
+/* QUIENES SOMOS DESKTOP */
 .body__sobreNosotros{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,17 +13,17 @@
 
 
 
-    font-family: 'Mandali', sans-serif;font-family: 'Mandali', sans-serif;
+    font-family: $fuente;
 }
 
 
 
-/* FUNDADORES SECTION-SOBRE NOSOTROS */
+/* FUNDADORES SECTION-QUIENES SOMOS */
 .fundadores{
     grid-area: fundadores;
     display: flex;
-    background-color: #e22a34;
-    color: #DAF7A6 ;
+    background-color: map-get($colores, rojo );
+    color: map-get($colores, clarito);
     &Contenedor1{
         width: 50%;
         display: flex;
@@ -52,12 +52,12 @@
 
 
 
-/* HISTORIA SECTION-SOBRE NOSOTROS*/
+/* HISTORIA SECTION-QUIENES SOMOS*/
 .historia{
     grid-area: historia;
     display: flex;
-    background-color: #e22a34;
-    color: #DAF7A6 ;
+    background-color: map-get($colores, rojo );
+    color: map-get($colores, clarito);
     &Contenedor1{
         width: 45%;
         margin-left: 3rem;
@@ -66,7 +66,7 @@
     }
     &Contenedor2{
         width: 55%;
-        background-color: #eb9907;
+        background-color: map-get($colores, dorado);
         & img{
             width: 100%;
             height: 100%;
@@ -75,11 +75,11 @@
 }
 
 
-/* TITULO-SOBRE NOSOTROS */
+/* TITULO-QUIENES SOMOS */
 .titulo{
     grid-area: titulo;
     text-align: center;
     padding: 5rem 0rem;
-    background-color:#eb9907;
-    color: #DAF7A6 ;
+    background-color:map-get($colores, dorado);
+    color: map-get($colores, clarito);
 }

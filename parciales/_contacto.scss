@@ -1,19 +1,19 @@
 /* CONTACTO */
 
 .body__contacto{
-    background-color: #e22a34;
+    background-color: map-get($colores, rojo);
 }
 
 .contacto__titulo{
     font-size: 4rem;
-    color: #DAF7A6;
+    color: map-get($colores, clarito);
     text-align: center;
     margin-top: 1rem;
 }
 
 .contacto__formulario{
     margin: 2rem;
-    background-color: #eb9907;
+    background-color: map-get($colores, dorado);
     padding: 2rem;
     border-radius: 1rem;
 }

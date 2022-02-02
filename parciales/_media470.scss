@@ -1,5 +1,6 @@
+/* MEDIA 470PX */
 @media only screen and (max-width: 470px) { 
-    /* HERO INDEX*/
+    /* HERO SECTION-INDEX */
     .hero1__lista a{
         font-size: 12px;
     
@@ -9,13 +10,13 @@
         font-size: 12px;
     }
 
-    /* FOOTER INDEX */
+    /* FOOTER */
     .footerContenedor2__logo{
         width: 14rem;
         height: 14rem;
     }
 
-        /* HEADER */
+    /* HEADER */
     .header__lista{
          display: flex;
          flex-wrap: wrap;

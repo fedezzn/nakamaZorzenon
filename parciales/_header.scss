@@ -3,7 +3,7 @@
 .header{
     grid-area: header;
     &__nav{
-        background-color: #000;
+        background-color: map-get($colores , negro);
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -14,17 +14,17 @@
         align-self: center;
         list-style: none;
         font-size: 1.56rem;
-        font-family: 'Mandali', sans-serif;
+        font-family: $fuente;
         text-transform: uppercase;
     }
     &__item{
         padding-right: 35px;
         & a {
             text-decoration: none;
-            color: #fff;
+            color: map-get($colores, blanco);
             &:hover{
-                border-bottom: solid 0.2rem #fff;
-                color: #fff;
+                border-bottom: solid 0.2rem map-get($colores, blanco);
+                color: map-get($colores, blanco);
             }
         }
     }
@@ -32,6 +32,7 @@
         width: 115px;
         height: 115px;
         border-radius: 100px;
+        margin: 10px 15px;
     }
     &__checkboxMenu{
         display: none;
@@ -42,8 +43,8 @@
 }
 
 #checked{
-    color: #eb9907; 
+    color: map-get($colores, dorado); 
     &:hover{
-        border-bottom: solid 0.2rem #eb9907;
+        border-bottom: solid 0.2rem map-get($colores, dorado);
     }
 }

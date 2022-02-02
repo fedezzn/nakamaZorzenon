@@ -7,7 +7,7 @@
                          "locales1 locales2"
                          "locales3 locales3"
                          "footer footer";
-    background-color: #e22a34;
+    background-color: map-get($colores, rojo);
 }
 
 .locales__contenedor1{
@@ -24,18 +24,22 @@
     &Iframe{
         height: 418px;
         margin: 1rem;
+        &--contenedor{
+            display: flex;
+            justify-content: center;
+        }
     }
     &Titulo{
         margin: 1rem 1rem 0rem 1rem;
         font-size: 2rem;
-        color: #DAF7A6 ;
+        color: map-get($colores, clarito);
         text-align: center;
         padding: 29px;
-        background-color: #eb9907;
+        background-color: map-get($colores, dorado);
     }
     &Texto{
         margin-left: 1rem;
-        color: #DAF7A6 ;
+        color: map-get($colores, clarito);
     }
 }
 
@@ -47,25 +51,25 @@
     &Titulo{
         margin-top: 1rem;
         padding: 29px;
-        background-color: #eb9907;
-        color: #DAF7A6 ;
+        background-color: map-get($colores, dorado);
+        color: map-get($colores, clarito);
         font-size: 2rem;
         text-align: center;
     }
     &Texto{
-        color: #DAF7A6;
+        color: map-get($colores, clarito);
         font-size: 2rem;
         text-align: center;
     }
     &Btn{
         text-decoration: none;
-        color: #DAF7A6 ;
+        color: map-get($colores, clarito);
         padding: 20px 60px;
-        background-color: #000;
+        background-color: map-get($colores, negro);
         align-self: center;
         &:hover{
-            background-color: #fff;
-            color: #000;
+            background-color: map-get($colores, blanco);
+            color: map-get($colores, negro);
         }
     }
 }
