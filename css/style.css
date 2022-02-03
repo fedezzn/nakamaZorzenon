@@ -173,6 +173,8 @@
     margin-left: 3rem;
     margin-right: 3rem;
     align-self: center; }
+    .historiaContenedor1__titulo {
+      margin-bottom: 6rem; }
   .historiaContenedor2 {
     width: 55%;
     background-color: #eb9907; }
